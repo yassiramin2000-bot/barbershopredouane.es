@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog & Guides | Barbershop Redouane</title>
+  <meta name="description" content="Read our latest guides, styling tips, and barbershop news.">
+  <link rel="stylesheet" href="styles.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HairSalon",
+    "name": "Barbershop Redouane",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "C. San Ramón, 4",
+      "addressLocality": "Barbastro",
+      "addressRegion": "Huesca",
+      "postalCode": "22300",
+      "addressCountry": "ES"
+    },
+    "telephone": "+34 614 11 94 58",
+    "url": "https://barbershopredouane.es",
+    "image": "https://barbershopredouane.es/logo.png"
+  }
+  </script>
+</head>
+
+<body>
+      <header class="new-header">
+    <div class="header-left">
+      <div class="header-logo">
+        <a href="index.html" aria-label="Inicio">
+          <img src="logo.png" alt="Barbershop Redouane Logo" style="height: 40px;">
+        </a>
+      </div>
+    </div>
+
+    <div class="header-center desktop-only">
+      <nav class="header-nav">
+        <a href="index.html#services">Servicios</a>
+        <a href="nosotros.html">Nosotros</a>
+        <a href="galeria.html">Galería</a>
+        <a href="faq-es.html">FAQ</a>
+        <a href="contacto.html">Ubicación</a>
+      </nav>
+    </div>
+
+    <div class="header-right desktop-only">
+      <a href="contacto.html" class="btn-gold header-booking-btn" style="padding: 0.7rem 1.5rem; font-size: 0.85rem;">Reservar</a>
+      <a href="en.html" class="lang-switch">EN</a>
+    </div>
+
+    <div class="mobile-menu-btn" onclick="toggleMobileMenu()">
+      <svg viewBox="0 0 24 24" width="35" height="35" fill="#ffffff">
+        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+      </svg>
+    </div>
+  </header>
+
+  <div class="mobile-menu-overlay" id="mobileMenu">
+    <a href="index.html#services">Servicios</a>
+    <a href="nosotros.html">Nosotros</a>
+    <a href="galeria.html">Galería</a>
+    <a href="faq-es.html">FAQ</a>
+    <a href="contacto.html">Ubicación</a>
+    <a href="en.html" style="color: #aaa;">Switch to English</a>
+    <a href="https://wa.me/34614119458" class="btn-gold" style="margin-top: 15px; text-align: center; display: block;">RESERVAR</a>
+  </div>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <div class="section-header text-center" style="margin-bottom: 4rem; padding-top: 2rem;">
+          <p class="sub-heading"
+            style="color: var(--color-accent); font-size: 0.85rem; font-weight: bold; letter-spacing: 2px; text-transform: uppercase;">
+            ARTÍCULOS Y GUÍAS</p>
+          <h1>Blog de <span style="color: var(--color-accent);">Barbería</span></h1>
+          <p style="max-width: 600px; margin: 1rem auto; color: #555;">Descubra nuestros consejos de expertos,
+            asesoramiento de estilo y conocimientos sobre el arte del cuidado personal moderno.</p>
+        </div>
+
+        <div class="blog-grid">
+          <!-- Article 1 -->
+          <article class="blog-card">
+            <div class="blog-img-wrapper">
+              <img src="nuestra-trabajo1.jpg" alt="5 Consejos para el Cuidado de la Barba" loading="lazy">
+            </div>
+            <div class="blog-content">
+              <span class="blog-category">Cuidado de Barba</span>
+              <h2 class="blog-title">5 Consejos de Cuidado de Barba para el Caballero Moderno</h2>
+              <p class="blog-excerpt">Mantén tu barba con un aspecto impecable y saludable con estas reglas
+                fundamentales de mantenimiento de nuestros mejores barberos...</p>
+              <a href="#" class="blog-read-more">Leer Más &rarr;</a>
+            </div>
+          </article>
+
+          <!-- Article 2 -->
+          <article class="blog-card">
+            <div class="blog-img-wrapper">
+              <img src="hero-image.webp" alt="La Guía del Degradado Clásico" loading="lazy">
+            </div>
+            <div class="blog-content">
+              <span class="blog-category">Guía de Estilo</span>
+              <h2 class="blog-title">El Degradado Clásico: Encuentra el Estilo Adecuado para tu Rostro</h2>
+              <p class="blog-excerpt">No todos los degradados son iguales. Conoce la diferencia entre bajo, medio y alto
+                para pedir exactamente lo que deseas.</p>
+              <a href="#" class="blog-read-more">Leer Más &rarr;</a>
+            </div>
+          </article>
+
+          <!-- Article 3 -->
+          <article class="blog-card">
+            <div class="blog-img-wrapper">
+              <img src="nuestra-trabajo2.jpg" alt="Cuidado del Cabello para Hombres" loading="lazy">
+            </div>
+            <div class="blog-content">
+              <span class="blog-category">Cuidado del Cabello</span>
+              <h2 class="blog-title">Cuidado del Cabello para Hombres: Deja de Lavarlo Todos los Días</h2>
+              <p class="blog-excerpt">El lavado diario elimina los aceites naturales vitales de tu cuero cabelludo. Esta
+                es nuestra rutina definitiva para un cabello más sano y grueso.</p>
+              <a href="#" class="blog-read-more">Leer Más &rarr;</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom" style="margin-top: 0; padding-top: 2rem;">
+        <p class="copyright">&copy; 2026 Barbershop Redouane. Todos los derechos reservados.</p>
+      </div>
+    </div>
+    <div class="developer-credit"
+      style="background-color: #050505; border-top: 1px solid #1a1a1a; padding: 15px 0; text-align: center; margin-top: 20px;">
+      <p style="margin: 0; color: #888; font-size: 0.85rem;">
+        Este sitio web fue creado por <strong style="color: var(--color-accent);">CasaWeb Design</strong>. <br>
+        ¿Quieres una web como esta para tu negocio?
+        <a href="https://wa.me/212716186658" target="_blank" rel="noopener noreferrer"
+          style="color: #ffffff; text-decoration: underline; font-weight: bold; margin-left: 5px;">
+          Contáctanos por WhatsApp
+        </a>
+      </p>
+    </div>
+
+  </footer>
+  
+  <script>
+    function toggleMobileMenu() {
+      const menu = document.getElementById('mobileMenu');
+      if (menu) {
+        menu.classList.toggle('active');
+      }
+    }
+  </script>
+  
+</body>
+
+</html>

@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Nosotros | Barbershop Redouane</title>
+    <meta name="description"
+        content="Conoce nuestra historia y nuestra pasión por la barbería clásica para el caballero moderno en Barbastro.">
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- SEO LocalBusiness Schema -->
+    <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HairSalon",
+    "name": "Barbershop Redouane",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "C. San RamÃ³n, 4",
+      "addressLocality": "Barbastro",
+      "addressRegion": "Huesca",
+      "postalCode": "22300",
+      "addressCountry": "ES"
+    },
+    "telephone": "+34 614 11 94 58",
+    "url": "https://barbershopredouane.es",
+    "image": "https://barbershopredouane.es/logo.png"
+  }
+  </script>
+</head>
+
+<body>
+    <svg width="0" height="0" class="visually-hidden">
+        <defs>
+            <linearGradient id="insta-grad" x1="0%" y1="100%" x2="100%" y2="0%">
+                <stop offset="0%" stop-color="#f09433" />
+                <stop offset="25%" stop-color="#e6683c" />
+                <stop offset="50%" stop-color="#dc2743" />
+                <stop offset="75%" stop-color="#cc2366" />
+                <stop offset="100%" stop-color="#bc1888" />
+            </linearGradient>
+        </defs>
+    </svg>
+
+    <style>
+        /* Fixed Fonts: Forcing Playfair Display to load */
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
+
+        .new-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.5rem 5%;
+            max-width: 1400px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+        }
+
+        .header-nav {
+            display: flex;
+            gap: 1.8rem;
+            flex: 1;
+            align-items: center;
+        }
+
+        .header-nav a {
+            text-decoration: none;
+            color: #2C2C2C;
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+            font-size: 0.9rem;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .header-nav a.lang-switch {
+            border: 1px solid #C48446;
+            color: #C48446;
+            border-radius: 4px;
+            padding: 0.2rem 0.5rem;
+        }
+
+        .header-logo {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+        }
+
+        .header-actions {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            gap: 1.2rem;
+            flex: 1;
+        }
+
+        .header-social-icon {
+            color: #2C2C2C;
+            display: flex;
+            align-items: center;
+            transition: color 0.3s;
+        }
+
+        .header-social-icon:hover {
+            color: #C48446;
+        }
+
+        .btn-gold {
+            background-color: #C48446;
+            color: white;
+            padding: 0.7rem 1.5rem;
+            text-decoration: none;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-radius: 50px;
+            font-size: 0.85rem;
+            box-shadow: 0 4px 15px rgba(196, 132, 70, 0.4);
+            transition: 0.3s;
+        }
+
+        .btn-gold:hover {
+            background-color: #a8713b;
+        }
+
+        @media (max-width: 992px) {
+            .new-header {
+                flex-direction: column;
+                gap: 1.5rem;
+                padding: 1.5rem 5%;
+            }
+
+            .header-nav,
+            .header-actions {
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+        }
+    </style>
+
+        <header class="new-header">
+    <div class="header-left">
+      <div class="header-logo">
+        <a href="index.html" aria-label="Inicio">
+          <img src="logo.png" alt="Barbershop Redouane Logo" style="height: 40px;">
+        </a>
+      </div>
+    </div>
+
+    <div class="header-center desktop-only">
+      <nav class="header-nav">
+        <a href="index.html#services">Servicios</a>
+        <a href="nosotros.html">Nosotros</a>
+        <a href="galeria.html">Galería</a>
+        <a href="faq-es.html">FAQ</a>
+        <a href="contacto.html">Ubicación</a>
+      </nav>
+    </div>
+
+    <div class="header-right desktop-only">
+      <a href="contacto.html" class="btn-gold header-booking-btn" style="padding: 0.7rem 1.5rem; font-size: 0.85rem;">Reservar</a>
+      <a href="en.html" class="lang-switch">EN</a>
+    </div>
+
+    <div class="mobile-menu-btn" onclick="toggleMobileMenu()">
+      <svg viewBox="0 0 24 24" width="35" height="35" fill="#ffffff">
+        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+      </svg>
+    </div>
+  </header>
+
+  <div class="mobile-menu-overlay" id="mobileMenu">
+    <a href="index.html#services">Servicios</a>
+    <a href="nosotros.html">Nosotros</a>
+    <a href="galeria.html">Galería</a>
+    <a href="faq-es.html">FAQ</a>
+    <a href="contacto.html">Ubicación</a>
+    <a href="en.html" style="color: #aaa;">Switch to English</a>
+    <a href="https://wa.me/34614119458" class="btn-gold" style="margin-top: 15px; text-align: center; display: block;">RESERVAR</a>
+  </div>
+
+    <main style="padding-top: 100px;">
+
+        <section class="section about-section">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-img-wrapper">
+                        <img src="Nuestra-Historia.jpg" alt="Barbershop Redouane Haircut"
+                            style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;">
+                    </div>
+                    <div class="about-content">
+                        <div class="section-header" style="margin-bottom: 2rem;">
+                            <p class="sub-heading"
+                                style="color: var(--color-accent); font-size: 0.85rem; font-weight: bold; letter-spacing: 2px; text-transform: uppercase;">
+                                SOBRE NOSOTROS</p>
+                            <h2>Nuestra <span style="color: var(--color-accent);">Historia</span></h2>
+                        </div>
+                        <p>En Barbershop Redouane, combinamos las tradiciones atemporales de la barbería clásica con
+                            técnicas modernas. Con años de experiencia y pasión por la artesanía, nos aseguramos de que
+                            cada cliente se vaya luciendo y sintiéndose lo mejor posible.</p>
+                        <p>Nuestro compromiso con la calidad, la atención al detalle y un ambiente acogedor nos
+                            convierte en el destino principal para caballeros en Barbastro.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" style="background-color: #FFFFFF; padding-top: 2rem; padding-bottom: 4rem;">
+            <div class="container" style="max-width: 800px; margin: 0 auto; text-align: center;">
+
+                <div class="section-header" style="margin-bottom: 2rem;">
+                    <p class="sub-heading"
+                        style="color: var(--color-accent); font-size: 0.85rem; font-weight: bold; letter-spacing: 2px; text-transform: uppercase;">
+                        RESERVA RÁPIDA</p>
+                    <h2>Escríbenos por <span style="color: var(--color-accent);">WhatsApp</span></h2>
+                </div>
+
+                <div
+                    style="background: var(--color-bg); padding: 3rem; border-radius: 12px; box-shadow: 0 5px 20px rgba(0,0,0,0.03);">
+                    <p style="font-size: 1.1rem; color: #555; margin-bottom: 2rem; line-height: 1.6;">
+                        Para ofrecerte la mejor y más rápida atención, gestionamos todas nuestras citas y consultas
+                        directamente a través de WhatsApp. ¡Haz clic abajo y hablemos!
+                    </p>
+                    <a href="https://wa.me/34614119458" class="btn-gold" target="_blank" rel="noopener noreferrer"
+                        style="display: inline-flex; align-items: center; justify-content: center; padding: 1rem 2.5rem; font-size: 1.1rem; font-weight: bold; text-transform: uppercase; border-radius: 50px; text-decoration: none; gap: 10px;">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z">
+                            </path>
+                        </svg>
+                        ENVIAR MENSAJE
+                    </a>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <a href="es.html"
+                        style="font-family: var(--font-display); font-size: 1.8rem; font-weight: bold; color: var(--color-accent);">Redouane</a>
+                    <p>Cortes expertos, arreglo de barba con precisión y afeitados tradicionales para el caballero
+                        moderno en Barbastro.</p>
+                    <div class="footer-socials">
+                        <a href="https://www.instagram.com/red_1_barbershop.mgc/" target="_blank"
+                            aria-label="Instagram">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg>
+                        </a>
+                        <a href="https://wa.me/34614119458" target="_blank" aria-label="WhatsApp">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path
+                                    d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z">
+                                </path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-links-grid">
+                    <div class="footer-col">
+                        <h4>Explorar</h4>
+                        <ul>
+                            <li><a href="nosotros.html">Sobre Nosotros</a></li>
+                            <li><a href="galeria.html">Nuestra Galería</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Soporte</h4>
+                        <ul>
+                            <li><a href="contacto.html">Contacto y Ubicación</a></li>
+                            <li><a href="https://wa.me/34614119458">Reserva por WhatsApp</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container footer-bottom-inner">
+                <p class="copyright">&copy; 2026 Barbershop Redouane. Todos los derechos reservados.</p>
+                <div class="footer-legal">
+                    <a href="privacy.html">GDPR y Política de Privacidad</a>
+                    <a href="terms.html">Términos de Uso</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="developer-credit"
+            style="background-color: #050505; border-top: 1px solid #1a1a1a; padding: 15px 0; text-align: center; margin-top: 20px;">
+            <p style="margin: 0; color: #888; font-size: 0.85rem;">
+                Este sitio web fue creado por <strong style="color: var(--color-accent);">CasaWeb Design</strong>. <br>
+                ¿Quieres una web como esta para tu negocio?
+                <a href="https://wa.me/212716186658" target="_blank" rel="noopener noreferrer"
+                    style="color: #ffffff; text-decoration: underline; font-weight: bold; margin-left: 5px;">
+                    Contáctanos por WhatsApp
+                </a>
+            </p>
+        </div>
+
+    </footer>
+    
+    <script>
+    function toggleMobileMenu() {
+      const menu = document.getElementById('mobileMenu');
+      if (menu) {
+        menu.classList.toggle('active');
+      }
+    }
+  </script>
+
+</body>
+
+</html>
